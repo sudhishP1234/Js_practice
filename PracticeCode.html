@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>funcion work in practice</h1>
+    <button id="click me"></button>
+  </body>
+  <script>
+    //===================== function work ==========================
+    //   var x=1;
+    //  function a(){
+    //     var x =100;
+    //     console.log(x);
+    //  }
+    //  function b(){
+    //     var x=10;        =>10,100,1
+    //     console.log(x)
+    //  }
+    //  b()
+    //  a()
+    //  console.log(x)
+
+    //============================ hoisting work==============================
+    // greet()
+    // function greet(){
+    //     var num1 =parseInt(prompt("enter the number"))
+    //     var num2 =parseInt(prompt("enter the number"))
+    //     var sum =num1+num2;
+    //     console.log(sum);
+    // }
+
+    //===========================undefine and not define=========================
+    // varible is not value declaire
+
+    // console.log(a)    => undefine
+    // var a =10;
+    // console.log(a)      => 10
+
+    //========================Scope and Laxical Environment===================================
+
+    // var a = "hello guys ,,";
+
+    // function first(){
+    //     var b ="how are you ..";
+    //     second();
+    //     console.log(c)
+
+    //     function second(){
+    //         var c="my self sudhish pandey";
+    //         console.log(a+b+c);
+    //         third();
+    //     }
+    //     function third(){
+    //         var d= "my self coading";
+    //         console.log(a+b+d);
+    //     }
+    // }
+
+    // first();
+
+    //====================let$ const Temporal Dead Zone==================================
+    // console.log(a);
+    // let a =100;
+    //  const b=56;
+
+    //  a=20;
+    //  console.log(a)
+
+    //========================Block Scope====================================
+    // var a =50;
+    // {
+    //     var a =10;
+    //     let b= 30;
+    //     const c =40;
+
+    //     console.log(a)
+    //     console.log(b)          =>10,30,40,10, B is not define
+    //     console.log(c)
+    // }
+    // console.log(a)
+    // console.log(b)
+    // console.log(c)
+
+    //===========================
+    // const a =100;
+    // {
+    //     const b =200;
+    //     {
+    //     const c = 300;
+    //     console.log(c);          =>300,200,100
+    //     }
+    //     console.log(b);
+    // }
+    // console.log(a)
+    //===========================
+    // const a =100;
+    // {
+    //     const a =200;
+    //     {
+    //     const a = 300;          =>300,200,100
+    //     console.log(a);
+    //     }
+    //     console.log(a);
+    // }
+    // console.log(a)
+
+    //==========================& Closures &===============================
+    // function init(){
+    //     var name ="mozila";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     // name="herry";
+    //     return displayName;
+    // }
+    // let c=init();
+    //  c()
+    //console.dir(c);
+
+    // =============================
+    //     function returnFunc(){
+    //     const x = () => {
+    //       let a = 20;
+    //       console.log(a);
+    //       const y = () => {
+    //        let a = 30;
+    //         console.log(a);
+    //         const z = () => {
+    //           let a = 40;
+    //           console.log(a); => 20,30,40
+    //         };
+    //         z()
+    //       };
+    //       a=222;
+    //       y()
+    //     };
+    //     return x;
+    // }
+    // let a =returnFunc()
+    // a();
+
+    //================================
+    // function returnFunc(){
+    //     const x = () => {
+    //       let a = 20;
+    //       console.log(a);
+    //       const y = () => {
+    //        let b = 30;
+    //         console.log(b);
+    //         const z = () => {
+    //           let c = 40;        => 20,30,40
+    //           console.log(c);
+    //         };
+    //         z()
+    //       };
+    //       a=222;
+    //       y()
+    //     };
+    //     return x;
+    // }
+    // let a =returnFunc()
+    // a();
+
+    // //================================
+    // var sum=function(a){
+    //     console.log("live server"+a);
+    //     var c=4;
+    //     return function(b){   
+    //         return a+b+c;         => live server200
+    //     }                         => 209
+    // }
+    // var store =sum(200);
+    // console.log(store(5))
+
+    //===================================
+    let a =100;
+    function outest(){
+      var c =30;
+      function outer(b){
+        function inner(){
+          console.log(a,b,c);
+        }
+       // let a =10;
+        return inner;
+      }
+      return outer;
+    }
+   var close=(outest()) ("helloword");
+   close();
+
+
+
+//======================================
+    // var sum =function(a,b,c){
+    //     return{
+    //         getSum1:function(){
+    //             return a+b;
+    //         },
+    //         getSum2:function(){
+    //             return a+b+c;
+    //         },
+    //         getSum3:function(){
+    //             return a+b+c;
+    //         }
+    //     }
+    // }
+    // var store =sum(5,4,8,6);
+    // console.log(store.getSum1());
+    // console.log(store.getSum2());
+    // console.log(store.getSum3());
+
+    // //=================================
+    // const outerFun=(a)=>{
+    //     let b=10;
+    //     const innerFun=()=>{
+    //         let sum =a+b;
+    //         console.log(`the sum of${sum} .`)
+    //         const thirdFun=()=>{
+    //             let sum1 =a+b;
+    //             console.log(`the sum1 of${sum1}.`)
+    //         }
+    //         thirdFun()
+    //     }
+    //     innerFun()
+    // }
+    // outerFun(5)
+
+    //===============================
+    //  function x(){
+    //     let a =7;
+    //     function y(){
+    //         console.log(a);
+    //     }
+    //     a=100;
+    //     return y;
+    //  }
+    //  var z =x();
+    //  console.log(z)
+    //  z();
+
+    //===============================================================
+    // for(var i=1; i<=5; i++){
+    //     setTimeout(() =>{
+    //         console.log(i)
+    //     }, 1000);
+    // }
+//============================
+    // const numRows = 3;
+    // // row
+    // for (let i = 0; i < numRows; i++) {
+    //   let stars = "";
+    //   // column
+    //   for (let j = numRows; j > i; j--) {
+    //     stars += "  *  ";
+    //   }
+
+    //   //console.log(stars);
+    //   setTimeout(() => {
+    //     console.log(stars);
+    //   }, i * 1000);
+    // }
+
+    //====================  variable ek function scope hota hai jo v  var declatre krte hai use hme function ke andar define krna padta hai
+    // var userName="rakesh";
+    // function mainFun(){
+    //   //if(true){  => if jo hota hai non blocking hota hai isliye variable assighn ho gya => mukesh
+    //   var userName ="mukesh";
+    //   //console.log(userName);
+    // }
+    // //mainFun()
+    // console.log(userName);
+
+//========================= Callback Function in Js===================================
+// setTimeout(function(){
+//   console.log("liner")
+// },4000);
+
+//  function x (y){
+//   console.log("x");
+//   y()
+//  }
+ 
+//  x(function y(){
+//   console.log("y");
+//  })
+
+//========================
+// const preLode =(friend ,callfrd)=>{
+//   console.log(`i am busy Now ${friend}`);
+//   callfrd()
+// }
+// const preLode2 =()=>{
+//   console.log(`hey there whtasup`)
+// }
+// preLode("thapa",preLode2);
+
+//============deep about event listner===closures demo with event listner===
+//=scope demo with event listner
+
+
+
+// this ====================================================
+  //  const thapa ={
+  //   name:"sudhish",
+  //   lastName:"pandey",
+  //   sum:function(){
+  //     var add = 2+5;
+  //     console.log("the sum two no ."+add);
+  //     console.log(this)
+  //   }
+  //  }
+  //  thapa.sum();
+
+
+
+
+
+  </script>
+</html>
