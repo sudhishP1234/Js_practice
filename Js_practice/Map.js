@@ -9,9 +9,9 @@
 // },0);
 //  console.log(newNum)
 
-//===============================
+//================================
 
-//   const dummy =companies.map((company,index)=>{
+  //   const dummy =companies.map((company,index)=>{
 //       return `${company.name} ${company.category} ${company.start}`
 //   })
 //   console.log(dummy);
@@ -37,5 +37,3 @@
 //   return name.length;
 // });                                      => Output: [5, 3, 7, 5]
 // console.log(nameLengths); 
-
-  

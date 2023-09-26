@@ -53,7 +53,7 @@
 
 // //=============================
 
-// const radios =[4,8,7,];
+// const radios =[4,8,7,6];
 // const area =function(radios){
 //     return Math.PI*radios*radios;
 // };
@@ -111,7 +111,6 @@
 
 // const sorted =companies.sort((b1,b2)=> (b1.start<b2.start ? 1 : -1));
 // console.log(sorted);
-
 
 
 
