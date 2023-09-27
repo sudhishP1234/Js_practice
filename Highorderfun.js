@@ -53,7 +53,7 @@
 
 // //=============================
 
-// const radios =[4,8,7,6];
+// const radios =[4,8,7,6]; 
 // const area =function(radios){
 //     return Math.PI*radios*radios;
 // };

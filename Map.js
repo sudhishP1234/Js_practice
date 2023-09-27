@@ -37,3 +37,35 @@
 //   return name.length;
 // });                                      => Output: [5, 3, 7, 5]
 // console.log(nameLengths); 
+
+//===============================
+
+// const arr =[7,8,5,9,2];
+
+// function findMax(arr){
+//   let max =0;
+//   for(let i=0; i<arr.length; i++){
+//     if (arr[i] > max){
+//       max =arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(findMax(arr));
+
+//=================================
+// const users= [
+//   {fName:"akshay" ,lName:"tiwari",age:24},
+//   {fName:"akash" ,lName:"mishra",age:26},
+//   {fName:"suraj" ,lName:"srivstav",age:21},
+//   {fName:"sani" ,lName:"pandey",age:22},
+// ]
+// const output =users.map((x)=>{
+//    return x.fName + " " +x.lName
+// })
+// console.log(output);
+
+//================================
+// const numbers = [1, 2, 3, 4, 5];
+// const squaredNumbers = numbers.map((number) => number ** 2);
+// // squaredNumbers is now [1, 4, 9, 16, 25]

@@ -62,3 +62,9 @@
 // const output1 =arr1.filter(islessThen);
 // console.log(output1);
 
+//=================================
+// let names =["jack","ram","Alice","david","peter"];
+// let lengthName =names.filter((name)=>{
+//     return name.length === 5
+// })
+// console.log(lengthName);
