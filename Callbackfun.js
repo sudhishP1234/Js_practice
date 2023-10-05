@@ -3,7 +3,7 @@
 // },4000);
 
 //  function x (y){
-//   console.log("x");
+//   console.log("x"); 
 //   y()
 //  }
  
@@ -35,3 +35,66 @@
 // const subResult =calculate(9,8 ,sub);
 // console.log(subResult);
 
+// //=====================================
+// function register(callback){
+//     setTimeout (()=>{
+//         console.log("ragister end");
+//         callback()
+//     },1000)  
+// }
+// function sendEmail(callback){
+//     setTimeout (()=>{
+//         console.log("email end");
+//         callback()
+//     },3000)  
+// }
+// function login(){
+//     setTimeout (()=>{
+//         console.log("login end");
+//     },1000)  
+// }
+// function getUserdata(){
+//     setTimeout (()=>{
+//         console.log("getuserdata end");
+//     },1000)  
+// }
+// function userData(){
+//     setTimeout (()=>{
+//         console.log("userdata end");
+//     },1000)  
+// }
+// register(function (){
+//     sendEmail(function (){
+//         login()
+//         getUserdata()
+//         userData()
+//     })
+    
+// })
+
+// console.log("end application");
+
+//====================================
+
+// var a=()=>{
+//     setTimeout(function(){
+//         console.log("welcome");
+//         b()
+//     },1000);
+//     const b=()=>{
+//         console.log("happy");
+//     }
+// }
+
+// a()
+
+//=================================
+
+const perOne=(name ,sayHi)=>{
+    console.log(`i am busy ${name}`);
+    sayHi()
+}
+const perTwo=()=>{
+    console.log(`hey i there call back`);
+}
+perOne("sam",perTwo) 

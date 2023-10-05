@@ -68,3 +68,14 @@
 //     return name.length === 5
 // })
 // console.log(lengthName);
+
+//===================================
+
+// let arr = ["a", "b", "c"];
+// let ftr = arr.filter(function(serch) {
+//   return serch.includes("c");
+// });
+// console.log(ftr);
+
+
+

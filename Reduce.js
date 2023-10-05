@@ -62,7 +62,7 @@
 //     { name: 'Bob', age: 25 },
 //     { name: 'Charlie', age: 35 },
 //   ];
-  
+
 //   const names = people.reduce((accumulator, person) => [...accumulator, person.name], []);
 //   console.log(names); // Output: ['Alice', 'Bob', 'Charlie']
 
@@ -75,4 +75,44 @@
 // }, {});
 // console.log(fruitCount); // Output: { apple: 3, banana: 2, cherry: 1 }
 
-  
+//====================================
+
+// const shopingCart = [
+//   {
+//     itemName: "python",
+//     price: 2450
+//   },
+//   {
+//     itemName: "javascript",
+//     price: 2000
+//   },
+//   {
+//     itemName: "node js",
+//     price: 2450
+//   },
+//   {
+//     itemName: "mongo Db",
+//     price: 2450
+//   },
+// ];
+// const shoping = shopingCart.reduce((acc, item) => {
+//   return acc + item.price;
+// }, 0);
+// console.log(shoping);
+
+//  const sem =shopingCart.filter((item)=>{
+//     return item.itemName ==="python"
+// })
+// console.log(sem);
+
+//  let add =shopingCart.map((amt)=>{
+//     return amt.price +500 
+// })
+// console.log(add);
+
+//===========================================
+
+// const greeting ="helo word";
+// for (const char of greeting){
+//     console.log(char);
+// }

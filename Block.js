@@ -1,16 +1,16 @@
 // var a =50;
-    // {
-    //     var a =10;
-    //     let b= 30;
-    //     const c =40;
+//     {
+//         var a =10;
+//         let b= 30;
+//         const c =40;
 
-    //     console.log(a)
-    //     console.log(b)          =>10,30,40,10, B is not define
-    //     console.log(c)
-    // }
-    // console.log(a)
-    // console.log(b)
-    // console.log(c)
+//         console.log(a)
+//         console.log(b)          //=>10,30,40,10, B is not define
+//         console.log(c)
+//     }
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
 
     //===========================
     // const a =100;

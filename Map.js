@@ -25,6 +25,14 @@
 // const output =arr.map(double)
 // console.log(output);
 
+// const numbers = [2, 3, 4, 5, 6];
+// function double(y){
+//   return y*2;
+// }
+// const output =numbers.map(double)
+// console.log(output);
+
+
 // //===============================
 // const numbers = [1, 2, 3, 4, 5];
 // const squaredNumbers = numbers.map((number) => number ** 2);
@@ -66,6 +74,6 @@
 // console.log(output);
 
 //================================
-// const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5]; 
 // const squaredNumbers = numbers.map((number) => number ** 2);
 // // squaredNumbers is now [1, 4, 9, 16, 25]
